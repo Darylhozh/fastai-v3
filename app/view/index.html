@@ -1,19 +1,98 @@
+<!DOCTYPE html>
 <html lang='en'>
 <head>
+  <title>Sea-creature-dex</title>
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
   <script src='../static/client.js'></script>
+  <style type = "text/css">
+    body { 
+		 background-size: cover;
+		 background-attachment:fixed;
+		 font-family: Trebuchet MS, Arial, sans-serif;
+    }
+	h1 {
+		font-size: 3em;
+		margin: 1;
+		padding: 20px;
+		text-align: center;
+				
+	}
+	p {
+		font-size: 1.2em;
+		margin: 3;
+		padding: 0;
+		text-align: center;
+		font-family: "Trebuchet MS";
+	}
+	#container {
+		width: 990px;
+		margin-left: auto;
+		margin-right: auto;
+		background: rgba(255, 255, 255, 0.4);
+		border: 2px transparent white;
+        border-radius: 50px 50px;
+	}
+	
+	.content {
+		padding: 10px;
+	}
+	.no-display {
+		width: 600px;
+	
+	}
+	
+	.footer {
+		clear: both;
+		padding: 10px;
+		background-color: #999;
+		color: white;
+		text-align: right;
+	}
+	.selected {
+		font-weight: bold;
+	}
+	
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	img {
+	 width: 40%;
+	 height:250px;
+	 display: block;
+     margin-left: auto;
+     margin-right: auto;
+	 border: 2px solid white;
+     border-radius: 40px 40px;
+	 
+	}
+	
+	h4 {
+		font-size: 25px;
+		padding-left: 15px;
+	}
+	
+	h5 {
+		font-size: 15px;
+		font-family: arial
+		font-weight: lighter;
+		padding-left: 15px;
+	}
+	
+	
+	
+  </style>
 </head>
-<body>
+<body background = "https://wallpapermemory.com/uploads/351/underwater-background-hd-1920x1200-444803.jpg">
 <div>
-  <div class='center'>
-    <div class='title'>Sea-creature-dex</div>
+  <div class='center' id = "container">
+    <div class='title' id = 'hello'><h1>Sea-creature-dex</h1></div>
     <p>
       Have a marine animal you need to identify? Upload it here!
     </p>
     <div class='content'>
-      <div class='no-display'>
-        <input id='file-input'
+      <div class='no-display'><input id='file-input'
                class='no-display'
                type='file'
                name='file'
@@ -33,8 +112,33 @@
       <div class='result-label'>
         <label id='result-label'></label>
       </div>
-    </div>
+	  <h4>Mammals</h4>
+	  <h5>Mammals are a group of vertebrate animals which form the class Mammalia. They have fur or hair and a very precise kind of temperature regulation.With the exception of the monotremes, all mammals bear live young. They also produce milk for the young. Parental care of the young is universal among mammals, and it is essential because live birth limits the number of offspring.
+	  </h5>
+	  <img src = "https://www.sciencemag.org/sites/default/files/styles/inline__450w__no_aspect/public/whale_16x9.jpg?itok=4_zR7eIj"/>
+	  <h4>Fish</h4>
+	  <h5>Fish (plural: fish or fishes) are vertebrates which live in water and respire (get oxygen) with gills. They lack limbs with digits (fingers & toes). This is a definition which does not quite work: some amphibia also live in water and have external gills, but they are not fishes. Fish used to be a class of vertebrates. Now the term covers five classes of aquatic vertebrates:
+	  </h5>
+	  <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Grass_carp_fexx.jpg/230px-Grass_carp_fexx.jpg"/>
+	  <h4>Crustaceans</h4>
+	  <h5>The Crustacea are a subphylum of arthropods with 67,000 described species. They are part of the phylum Arthropoda. Crustaceans include crabs, lobsters, crayfish, shrimp, krill and barnacles. They are relatives of insects. If the Arthropods are regarded as a superphylum, then the insects and crustacea would be phyla. (see List of animal phyla). The group has an extensive fossil record, reaching back to the Cambrian. Most crustaceans are aquatic, mostly marine. Some have moved onto land permanently. Crustaceans that live on land include some crabs, and woodlice. Crustacea range in size from a parasite 0.1mm long, to the Japanese spider crab with a leg span of up to 14 ft (4.3 m) and a mass of 44 lb (20 kg). The North Atlantic lobster can weigh more than 40 pounds.
+	  </h5>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Abludomelita_obtusata.jpg/220px-Abludomelita_obtusata.jpg"/>
+	  <h4>Cephalopods</h4>
+	  <h5>The Cephalopods (Greek meaning "head-foot") are an important class of molluscs. They have bilateral symmetry, a head, and arms or tentacles.[1] Teuthology, a branch of malacology, is the study of cephalopods. The class has two living subclasses. In the Coleoidea, the mollusc shell has become smaller, or is not there at all; this subclass has the octopus, squid, and cuttlefish. Two important extinct taxa are the Ammonites, and the Belemnites (order Belemnoidea, of class Coleoidea). Cephalopods are found in all the oceans of the world and at all pelagic levels. None of them can live in freshwater (water with no salt in it), but a few species live in brackish (partly salty) water.
+	  </h5>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Squidu.jpg/200px-Squidu.jpg"/>
+	  <h4>Reptiles</h4>
+	  <h5>Reptile is the common name for one of the main groups of land vertebrates. It is not used so much by biologists, who use more accurate terms. The name "reptile" comes from Latin and means "one who creeps". All living reptile species are cold blooded, have scaly skin, and lay cleidoic eggs. They excrete uric acid (instead of urea), and have a cloaca. A cloaca is a shared opening for the anus, urinary tract and reproductive ducts. Reptiles also share an arrangement of the heart and major blood vessels which is different from that of mammals.
+	  </h5>
+	  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Extant_reptilia.jpg/260px-Extant_reptilia.jpg"/>	 
+    </div> 
+	<div class = "footer">
+	  Copyright &copy; 2019 Group 4 woohoo!
+	</div>
   </div>
 </div>
 </body>
 </html>
+
+
